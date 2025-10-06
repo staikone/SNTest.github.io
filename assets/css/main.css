@@ -159,7 +159,7 @@ img {
     text-align: center;
 }
 .case__subtitle {
-margin-bottom: var(--mb-0-75);
+margin-bottom: var(--mb-3);
 }
 .case-study-page {
 margin-top: calc(var(--mb-3) + 5rem);
@@ -422,6 +422,7 @@ margin-top: calc(var(--mb-3) + 5rem);
 .about__description {
     text-align: initial;
     margin-bottom: var(--mb-2-5);
+    
 }
 
 .about__info {
