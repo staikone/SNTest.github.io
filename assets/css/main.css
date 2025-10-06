@@ -158,7 +158,9 @@ img {
 .section__subtitle {
     text-align: center;
 }
-
+.case__subtitle {
+margin-bottom: var(--mb-0-75);
+}
 /*==================== LAYOUT ====================*/
 .container {
     max-width: 768px;
