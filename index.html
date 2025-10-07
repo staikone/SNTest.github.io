@@ -93,6 +93,38 @@
             color: #666;
             font-size: 0.9rem;
         }
+
+        /* New 2025 Initiatives */
+        .initiative-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid #5d2de6;
+        }
+
+        .initiative-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .roi-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .roi-metric {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -114,32 +146,26 @@
                     </li>
                     
                     <li class="nav__item">
-                        <a href="#expertise" class="nav__link">
-                            <i class="uil uil-circuit nav__icon"></i> Expertise
+                        <a href="#initiatives" class="nav__link">
+                            <i class="uil uil-rocket nav__icon"></i> 2025 Initiatives
                         </a>
                     </li>
                     
                     <li class="nav__item">
                         <a href="#solutions" class="nav__link">
-                            <i class="uil uil-rocket nav__icon"></i> Solutions
+                            <i class="uil uil-circuit nav__icon"></i> AI Solutions
                         </a>
                     </li>
                     
                     <li class="nav__item">
-                        <a href="#case-studies" class="nav__link">
-                            <i class="uil uil-chart-bar nav__icon"></i> Case Studies
-                        </a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#testimonials" class="nav__link">
-                            <i class="uil uil-star nav__icon"></i> Results
+                        <a href="#results" class="nav__link">
+                            <i class="uil uil-chart-bar nav__icon"></i> ROI Results
                         </a>
                     </li>
                     
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Collaborate
+                            <i class="uil uil-message nav__icon"></i> Get Started
                         </a>
                     </li>
                 </ul>
@@ -147,9 +173,7 @@
             </div>
 
             <div class="nav__btns">
-                <!-- Theme change button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
-
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -171,10 +195,6 @@
                         <a href="https://github.com/" aria-label="GitHub" target="_blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
-                        
-                        <a href="https://dribbble.com/" aria-label="Dribbble" target="_blank" class="home__social-icon">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
                     </div>
                     
                     <div class="home__img">
@@ -191,199 +211,175 @@
                     
                     <div class="home__data">
                         <h1 id="home-heading" class="home__title">
-                            Digital Innovation <span class="trending-badge">2025</span>
+                            AI-Powered Digital Transformation <span class="trending-badge">2025</span>
                         </h1>
-                        <h2 class="home__subtitle">AI & Web3 Solutions Architect</h2>
+                        <h2 class="home__subtitle">Driving 40% Cost Reduction & 3.2x ROI</h2>
                         <p class="home__description">
-                            Building next-generation digital experiences with AI integration, 
-                            blockchain technology, and scalable SaaS solutions for forward-thinking businesses.
+                            Implementing cutting-edge AI automation that delivers measurable business results. 
+                            Proven track record of reducing operational costs while increasing revenue through 
+                            intelligent digital solutions.
                         </p>
                         
                         <div class="tech-stack">
-                            <span class="tech-tag">AI Integration</span>
-                            <span class="tech-tag">Web3</span>
-                            <span class="tech-tag">SaaS</span>
-                            <span class="tech-tag">Cloud Native</span>
-                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">AI Automation</span>
+                            <span class="tech-tag">Cost Reduction</span>
+                            <span class="tech-tag">ROI Focused</span>
+                            <span class="tech-tag">Process Optimization</span>
                         </div>
                         
-                        <a href="#solutions" class="button button--flex">
-                            Explore Solutions <i class="uil uil-arrow-right button__icon"></i>
+                        <a href="#initiatives" class="button button--flex">
+                            See 2025 Results <i class="uil uil-arrow-right button__icon"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="home__scroll">
-                    <a href="#expertise" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Discover Expertise</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
+            </div>
+        </section>
+
+        <!-- ==================== 2025 INITIATIVES ==================== -->
+        <section class="about section" id="initiatives" aria-labelledby="initiatives-heading">
+            <div class="container">
+                <h2 id="initiatives-heading" class="section__title">2025 Business Initiatives</h2>
+                <span class="section__subtitle">Proven strategies delivering real ROI</span>
+
+                <div class="initiative-highlight">
+                    <h3 style="color: white; margin-bottom: 1rem;">🚀 Key Achievement: 40% Operational Cost Reduction</h3>
+                    <p style="color: white; opacity: 0.9;">Through AI-powered process automation and intelligent workflow optimization</p>
+                </div>
+
+                <!-- INITIATIVE 1: AI Process Automation -->
+                <div class="initiative-card">
+                    <h3>🤖 AI-Powered Process Automation</h3>
+                    <p><strong>Business Impact:</strong> 40% reduction in operational costs through automated workflows</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">RPA Integration</span>
+                        <span class="tech-tag">Workflow AI</span>
+                        <span class="tech-tag">Process Mining</span>
+                    </div>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Automated customer service handling 80% of inquiries</li>
+                        <li>Intelligent document processing reducing manual work by 60%</li>
+                        <li>Predictive maintenance saving 25% in operational downtime</li>
+                    </ul>
+                </div>
+
+                <!-- INITIATIVE 2: Data-Driven Decision Making -->
+                <div class="initiative-card">
+                    <h3>📊 Real-Time Business Intelligence</h3>
+                    <p><strong>Business Impact:</strong> 3.2x ROI through data-informed strategic decisions</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Predictive Analytics</span>
+                        <span class="tech-tag">KPI Dashboards</span>
+                        <span class="tech-tag">ML Forecasting</span>
+                    </div>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Real-time revenue forecasting with 95% accuracy</li>
+                        <li>Customer behavior prediction increasing conversion by 35%</li>
+                        <li>Automated reporting saving 20+ hours weekly</li>
+                    </ul>
+                </div>
+
+                <!-- INITIATIVE 3: Scalable Digital Infrastructure -->
+                <div class="initiative-card">
+                    <h3>⚡ Cloud-Native Scalability</h3>
+                    <p><strong>Business Impact:</strong> 99.9% uptime with 30% reduced infrastructure costs</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Serverless Architecture</span>
+                        <span class="tech-tag">Auto-scaling</span>
+                    </div>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Zero-downtime deployments</li>
+                        <li>Auto-scaling handling 500% traffic spikes</li>
+                        <li>Cost-optimized cloud resource allocation</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== EXPERTISE ==================== -->
-        <section class="about section" id="expertise" aria-labelledby="expertise-heading">
-            <h2 id="expertise-heading" class="section__title">2025 Digital Expertise</h2>
-            <span class="section__subtitle">Future-ready technology stack</span>
-            
-            <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="Digital innovation expertise" class="about__img">
-                
-                <div class="about__data">
-                    <p class="about__description">
-                        Specializing in cutting-edge technologies that drive business growth in the digital age. 
-                        From AI-powered automation to blockchain security and cloud-native architectures.
-                    </p>
-                    
-                    <div class="metrics-grid">
-                        <div class="metric-card">
-                            <span class="metric-value">40%</span>
-                            <span class="metric-label">Cost Reduction with AI</span>
-                        </div>
-                        <div class="metric-card">
-                            <span class="metric-value">3.2x</span>
-                            <span class="metric-label">ROI Improvement</span>
-                        </div>
-                        <div class="metric-card">
-                            <span class="metric-value">98%</span>
-                            <span class="metric-label">Uptime Guarantee</span>
-                        </div>
-                        <div class="metric-card">
-                            <span class="metric-value">24/7</span>
-                            <span class="metric-label">AI Monitoring</span>
-                        </div>
-                    </div>
-                    
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">50+</span>
-                            <span class="about__info-name">AI Models <br> Deployed</span>
-                        </div>
-                        
-                        <div>
-                            <span class="about__info-title">15+</span>
-                            <span class="about__info-name">Blockchain <br> Projects</span>
-                        </div>
-                        
-                        <div>
-                            <span class="about__info-title">99.9%</span>
-                            <span class="about__info-name">Client <br> Satisfaction</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SOLUTIONS ==================== -->
+        <!-- ==================== AI SOLUTIONS ==================== -->
         <section class="skills section" id="solutions" aria-labelledby="solutions-heading">
-            <h2 id="solutions-heading" class="section__title">2025 Solutions Portfolio</h2>
-            <span class="section__subtitle">Innovative digital products</span>
+            <h2 id="solutions-heading" class="section__title">AI Solutions Driving Results</h2>
+            <span class="section__subtitle">Technology that delivers measurable business value</span>
             
             <div class="skills__container container grid">
-                <!-- AI SOLUTIONS -->
+                <!-- COST REDUCTION AI -->
                 <div class="skills__content">
                     <h3 class="skills__title">
-                        AI & Automation 
-                        <span class="trending-badge">HOT</span>
+                        💰 Cost Reduction AI 
+                        <span class="trending-badge">40% SAVINGS</span>
                     </h3>
                     
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
-                                <i class="uil uil-robot skills__icon"></i>
+                                <i class="uil uil-money-insert skills__icon"></i>
                                 <div>
-                                    <h3 class="skills__name">AI Chatbots</h3>
-                                    <span class="skills__level">Customer Service Automation</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills__data">
-                                <i class="uil uil-brain skills__icon"></i>
-                                <div>
-                                    <h3 class="skills__name">Predictive Analytics</h3>
-                                    <span class="skills__level">Data-driven Insights</span>
+                                    <h3 class="skills__name">Operational Efficiency</h3>
+                                    <span class="skills__level">40% cost reduction proven</span>
                                 </div>
                             </div>
                             
                             <div class="skills__data">
                                 <i class="uil uil-processor skills__icon"></i>
                                 <div>
-                                    <h3 class="skills__name">Machine Learning</h3>
-                                    <span class="skills__level">Custom AI Models</span>
+                                    <h3 class="skills__name">Process Automation</h3>
+                                    <span class="skills__level">80% task automation</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- BLOCKCHAIN & WEB3 -->
+                <!-- REVENUE GROWTH AI -->
                 <div class="skills__content">
                     <h3 class="skills__title">
-                        Web3 & Blockchain
-                        <span class="trending-badge">TRENDING</span>
+                        📈 Revenue Growth AI
+                        <span class="trending-badge">3.2x ROI</span>
                     </h3>
                     
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
-                                <i class="uil uil-link skills__icon"></i>
+                                <i class="uil uil-chart-growth skills__icon"></i>
                                 <div>
-                                    <h3 class="skills__name">Smart Contracts</h3>
-                                    <span class="skills__level">Ethereum & Solana</span>
+                                    <h3 class="skills__name">Predictive Sales</h3>
+                                    <span class="skills__level">35% conversion increase</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-user-plus skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Customer Insights</h3>
+                                    <span class="skills__level">Personalized experiences</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCALABILITY AI -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        🚀 Scalability AI
+                        <span class="trending-badge">99.9% UPTIME</span>
+                    </h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="uil uil-cloud-check skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Auto-scaling</h3>
+                                    <span class="skills__level">500% traffic handling</span>
                                 </div>
                             </div>
                             
                             <div class="skills__data">
                                 <i class="uil uil-shield-check skills__icon"></i>
                                 <div>
-                                    <h3 class="skills__name">DeFi Solutions</h3>
-                                    <span class="skills__level">Financial Innovation</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills__data">
-                                <i class="uil uil-coins skills__icon"></i>
-                                <div>
-                                    <h3 class="skills__name">NFT Marketplaces</h3>
-                                    <span class="skills__level">Digital Assets</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SAAS PLATFORMS -->
-                <div class="skills__content">
-                    <h3 class="skills__title">
-                        SaaS Platforms
-                        <span class="trending-badge">SCALABLE</span>
-                    </h3>
-                    
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="uil uil-cloud-computing skills__icon"></i>
-                                <div>
-                                    <h3 class="skills__name">Cloud Native</h3>
-                                    <span class="skills__level">Microservices Architecture</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills__data">
-                                <i class="uil uil-chart-pie skills__icon"></i>
-                                <div>
-                                    <h3 class="skills__name">Analytics Dashboards</h3>
-                                    <span class="skills__level">Real-time Data</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills__data">
-                                <i class="uil uil-mobile-android skills__icon"></i>
-                                <div>
-                                    <h3 class="skills__name">Progressive Web Apps</h3>
-                                    <span class="skills__level">Mobile-First</span>
+                                    <h3 class="skills__name">Infrastructure AI</h3>
+                                    <span class="skills__level">30% cost optimization</span>
                                 </div>
                             </div>
                         </div>
@@ -392,121 +388,74 @@
             </div>
         </section>
 
-        <!-- ==================== CASE STUDIES ==================== -->
-        <section class="portfolio section" id="case-studies" aria-labelledby="case-studies-heading">
-            <h2 id="case-studies-heading" class="section__title">Success Stories</h2>
-            <span class="section__subtitle">Real results for forward-thinking businesses</span>
+        <!-- ==================== ROI RESULTS ==================== -->
+        <section class="portfolio section" id="results" aria-labelledby="results-heading">
+            <h2 id="results-heading" class="section__title">Measurable Business Results</h2>
+            <span class="section__subtitle">Real ROI from AI implementation</span>
             
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- CASE STUDY 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="AI-Powered E-commerce Platform" class="portfolio__img">
-                        
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">AI E-commerce Suite</h3>
-                            <p class="portfolio__description">
-                                Increased conversion by 45% with personalized AI recommendations 
-                                and automated customer service.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                            </div>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Case Study
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
+            <div class="container">
+                <div class="roi-metrics">
+                    <div class="roi-metric">
+                        <div class="metric-value">40%</div>
+                        <div class="metric-label">Cost Reduction</div>
                     </div>
-                    
-                    <!-- CASE STUDY 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="Blockchain Supply Chain Solution" class="portfolio__img">
-                        
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Supply Chain Blockchain</h3>
-                            <p class="portfolio__description">
-                                Reduced fraud by 92% with transparent, immutable supply chain tracking 
-                                and smart contract automation.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Ethereum</span>
-                                <span class="tech-tag">Smart Contracts</span>
-                                <span class="tech-tag">Web3</span>
-                            </div>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Case Study
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
+                    <div class="roi-metric">
+                        <div class="metric-value">3.2x</div>
+                        <div class="metric-label">ROI Improvement</div>
                     </div>
-                    
-                    <!-- CASE STUDY 3 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio3.jpg" alt="SaaS Analytics Platform" class="portfolio__img">
-                        
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Real-time Analytics SaaS</h3>
-                            <p class="portfolio__description">
-                                Processed 1M+ data points daily with predictive analytics 
-                                and automated reporting for 50+ enterprise clients.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">AWS</span>
-                                <span class="tech-tag">React</span>
-                            </div>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Case Study
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
+                    <div class="roi-metric">
+                        <div class="metric-value">99.9%</div>
+                        <div class="metric-label">System Uptime</div>
+                    </div>
+                    <div class="roi-metric">
+                        <div class="metric-value">35%</div>
+                        <div class="metric-label">Conversion Increase</div>
                     </div>
                 </div>
-                
-                <!-- Navigation Arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+
+                <div class="initiative-card">
+                    <h3>🎯 Client Success Story: E-commerce Transformation</h3>
+                    <p><strong>Challenge:</strong> High operational costs, low conversion rates, manual processes</p>
+                    <p><strong>Solution:</strong> End-to-end AI automation platform</p>
+                    <p><strong>Results in 6 months:</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>✅ <strong>40% reduction</strong> in customer service costs through AI chatbots</li>
+                        <li>✅ <strong>35% increase</strong> in conversion rates with personalized recommendations</li>
+                        <li>✅ <strong>60% automation</strong> of manual administrative tasks</li>
+                        <li>✅ <strong>3.2x ROI</strong> within first year of implementation</li>
+                    </ul>
                 </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-                
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
             </div>
         </section>
 
         <!-- ==================== CONTACT ==================== -->
         <section class="contact section" id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading" class="section__title">Start Your Digital Transformation</h2>
-            <span class="section__subtitle">Let's build the future together</span>
+            <h2 id="contact-heading" class="section__title">Ready for 40% Cost Reduction?</h2>
+            <span class="section__subtitle">Let's achieve measurable results together</span>
             
             <div class="contact__container container grid">
                 <div>
                     <div class="contact__information">
-                        <i class="uil uil-robot contact__icon"></i>
+                        <i class="uil uil-money-insert contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">AI Consultation</h3>
-                            <span class="contact__subtitle">Free strategy session</span>
+                            <h3 class="contact__title">Cost Analysis</h3>
+                            <span class="contact__subtitle">Free ROI assessment</span>
                         </div>
                     </div>
                     
                     <div class="contact__information">
-                        <i class="uil uil-bolt contact__icon"></i>
+                        <i class="uil uil-rocket contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">Quick Start</h3>
-                            <span class="contact__subtitle">2-week prototype delivery</span>
+                            <h3 class="contact__title">Quick Implementation</h3>
+                            <span class="contact__subtitle">30-day pilot program</span>
                         </div>
                     </div>
                     
                     <div class="contact__information">
-                        <i class="uil uil-globe contact__icon"></i>
+                        <i class="uil uil-chart-bar contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">Global Reach</h3>
-                            <span class="contact__subtitle">Remote teams worldwide</span>
+                            <h3 class="contact__title">Measurable Results</h3>
+                            <span class="contact__subtitle">Guanteed performance metrics</span>
                         </div>
                     </div>
                 </div>
@@ -525,13 +474,13 @@
                     </div>
 
                     <div class="contact__content">
-                        <label for="project-type" class="contact__label">Project Interest</label>
-                        <select id="project-type" class="contact__input" name="project-type">
-                            <option value="">Select project type</option>
-                            <option value="ai">AI & Automation</option>
-                            <option value="web3">Web3 & Blockchain</option>
-                            <option value="saas">SaaS Platform</option>
-                            <option value="consulting">Digital Transformation</option>
+                        <label for="challenge" class="contact__label">Biggest Business Challenge</label>
+                        <select id="challenge" class="contact__input" name="challenge">
+                            <option value="">Select your challenge</option>
+                            <option value="costs">High Operational Costs</option>
+                            <option value="conversion">Low Conversion Rates</option>
+                            <option value="efficiency">Inefficient Processes</option>
+                            <option value="scaling">Difficulty Scaling</option>
                         </select>
                     </div>
                     
@@ -541,15 +490,15 @@
                     </div>
                     
                     <div class="contact__content">
-                        <label for="message" class="contact__label">Project Vision</label>
-                        <textarea name="message" id="message" cols="0" rows="5" class="contact__input" 
-                                  placeholder="Describe your digital transformation goals..."></textarea>
+                        <label for="message" class="contact__label">Current Monthly Operational Costs</label>
+                        <textarea name="message" id="message" cols="0" rows="3" class="contact__input" 
+                                  placeholder="Help us understand your cost structure for maximum ROI..."></textarea>
                     </div>
                     
                     <div>
                         <button type="submit" class="button button--flex">
-                            Schedule Strategy Call
-                            <i class="uil uil-calendar-alt button__icon"></i>
+                            Get Free Cost Reduction Analysis
+                            <i class="uil uil-calculator-alt button__icon"></i>
                         </button>
                     </div>
                 </form>
@@ -563,18 +512,18 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">DigitalInnovation</h1>
-                    <span class="footer__subtitle">Building the Future Today</span>
+                    <span class="footer__subtitle">Driving 40% Cost Reduction Through AI</span>
                 </div>
                 
                 <ul class="footer__links">
                     <li>
-                        <a href="#solutions" class="footer__link">Solutions</a>
+                        <a href="#initiatives" class="footer__link">2025 Initiatives</a>
                     </li>
                     <li>
-                        <a href="#case-studies" class="footer__link">Case Studies</a>
+                        <a href="#results" class="footer__link">ROI Results</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Collaborate</a>
+                        <a href="#contact" class="footer__link">Cost Analysis</a>
                     </li>
                 </ul>
                 
@@ -586,14 +535,10 @@
                     <a href="https://github.com/" aria-label="GitHub" target="_blank" class="footer__social">
                         <i class="uil uil-github-alt"></i>
                     </a>
-                    
-                    <a href="https://twitter.com/" aria-label="Twitter" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
                 </div>
             </div>
             
-            <p class="footer__copy">&#169; 2025 DigitalInnovation. Leading the digital revolution.</p>
+            <p class="footer__copy">&#169; 2025 DigitalInnovation. Proven AI solutions delivering 40% cost reduction and 3.2x ROI.</p>
         </div>
     </footer>
     
