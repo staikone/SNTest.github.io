@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & Digital Innovation Portfolio - Next-gen Web Solutions for 2025">
+    <meta name="keywords" content="AI development, SaaS solutions, digital transformation, web3, blockchain, responsive design">
+    
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <title>Digital Innovation Portfolio 2025 | AI & Web3 Solutions</title>
+    
+    <style>
+        .imageye-selected {
+            outline: 2px solid black !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Trending 2025 Badges */
+        .trending-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .tech-tag {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #495057;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #5d2de6;
+            display: block;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main Navigation">
+            <a href="#" class="nav__logo">
+                <span class="logo-text">DigitalInnovation</span>
+                <span class="trending-badge">2025</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#expertise" class="nav__link">
+                            <i class="uil uil-circuit nav__icon"></i> Expertise
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#solutions" class="nav__link">
+                            <i class="uil uil-rocket nav__icon"></i> Solutions
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#case-studies" class="nav__link">
+                            <i class="uil uil-chart-bar nav__icon"></i> Case Studies
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">
+                            <i class="uil uil-star nav__icon"></i> Results
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Collaborate
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="main" role="main">
+        <!-- ==================== HERO ==================== -->
+        <section class="home section" id="home" aria-labelledby="home-heading">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        
+                        <a href="https://github.com/" aria-label="GitHub" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        
+                        <a href="https://dribbble.com/" aria-label="Dribbble" target="_blank" class="home__social-icon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/profile.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <div class="home__data">
+                        <h1 id="home-heading" class="home__title">
+                            Digital Innovation <span class="trending-badge">2025</span>
+                        </h1>
+                        <h2 class="home__subtitle">AI & Web3 Solutions Architect</h2>
+                        <p class="home__description">
+                            Building next-generation digital experiences with AI integration, 
+                            blockchain technology, and scalable SaaS solutions for forward-thinking businesses.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">AI Integration</span>
+                            <span class="tech-tag">Web3</span>
+                            <span class="tech-tag">SaaS</span>
+                            <span class="tech-tag">Cloud Native</span>
+                            <span class="tech-tag">Blockchain</span>
+                        </div>
+                        
+                        <a href="#solutions" class="button button--flex">
+                            Explore Solutions <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="home__scroll">
+                    <a href="#expertise" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Discover Expertise</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERTISE ==================== -->
+        <section class="about section" id="expertise" aria-labelledby="expertise-heading">
+            <h2 id="expertise-heading" class="section__title">2025 Digital Expertise</h2>
+            <span class="section__subtitle">Future-ready technology stack</span>
+            
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="Digital innovation expertise" class="about__img">
+                
+                <div class="about__data">
+                    <p class="about__description">
+                        Specializing in cutting-edge technologies that drive business growth in the digital age. 
+                        From AI-powered automation to blockchain security and cloud-native architectures.
+                    </p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-value">40%</span>
+                            <span class="metric-label">Cost Reduction with AI</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">3.2x</span>
+                            <span class="metric-label">ROI Improvement</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">98%</span>
+                            <span class="metric-label">Uptime Guarantee</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">24/7</span>
+                            <span class="metric-label">AI Monitoring</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">50+</span>
+                            <span class="about__info-name">AI Models <br> Deployed</span>
+                        </div>
+                        
+                        <div>
+                            <span class="about__info-title">15+</span>
+                            <span class="about__info-name">Blockchain <br> Projects</span>
+                        </div>
+                        
+                        <div>
+                            <span class="about__info-title">99.9%</span>
+                            <span class="about__info-name">Client <br> Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SOLUTIONS ==================== -->
+        <section class="skills section" id="solutions" aria-labelledby="solutions-heading">
+            <h2 id="solutions-heading" class="section__title">2025 Solutions Portfolio</h2>
+            <span class="section__subtitle">Innovative digital products</span>
+            
+            <div class="skills__container container grid">
+                <!-- AI SOLUTIONS -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        AI & Automation 
+                        <span class="trending-badge">HOT</span>
+                    </h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="uil uil-robot skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">AI Chatbots</h3>
+                                    <span class="skills__level">Customer Service Automation</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-brain skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Predictive Analytics</h3>
+                                    <span class="skills__level">Data-driven Insights</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-processor skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Machine Learning</h3>
+                                    <span class="skills__level">Custom AI Models</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BLOCKCHAIN & WEB3 -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        Web3 & Blockchain
+                        <span class="trending-badge">TRENDING</span>
+                    </h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="uil uil-link skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Smart Contracts</h3>
+                                    <span class="skills__level">Ethereum & Solana</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-shield-check skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">DeFi Solutions</h3>
+                                    <span class="skills__level">Financial Innovation</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-coins skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">NFT Marketplaces</h3>
+                                    <span class="skills__level">Digital Assets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SAAS PLATFORMS -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        SaaS Platforms
+                        <span class="trending-badge">SCALABLE</span>
+                    </h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="uil uil-cloud-computing skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Cloud Native</h3>
+                                    <span class="skills__level">Microservices Architecture</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-chart-pie skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Analytics Dashboards</h3>
+                                    <span class="skills__level">Real-time Data</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class="uil uil-mobile-android skills__icon"></i>
+                                <div>
+                                    <h3 class="skills__name">Progressive Web Apps</h3>
+                                    <span class="skills__level">Mobile-First</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CASE STUDIES ==================== -->
+        <section class="portfolio section" id="case-studies" aria-labelledby="case-studies-heading">
+            <h2 id="case-studies-heading" class="section__title">Success Stories</h2>
+            <span class="section__subtitle">Real results for forward-thinking businesses</span>
+            
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- CASE STUDY 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="AI-Powered E-commerce Platform" class="portfolio__img">
+                        
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">AI E-commerce Suite</h3>
+                            <p class="portfolio__description">
+                                Increased conversion by 45% with personalized AI recommendations 
+                                and automated customer service.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Case Study
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- CASE STUDY 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="Blockchain Supply Chain Solution" class="portfolio__img">
+                        
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Supply Chain Blockchain</h3>
+                            <p class="portfolio__description">
+                                Reduced fraud by 92% with transparent, immutable supply chain tracking 
+                                and smart contract automation.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Ethereum</span>
+                                <span class="tech-tag">Smart Contracts</span>
+                                <span class="tech-tag">Web3</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Case Study
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- CASE STUDY 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="SaaS Analytics Platform" class="portfolio__img">
+                        
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Real-time Analytics SaaS</h3>
+                            <p class="portfolio__description">
+                                Processed 1M+ data points daily with predictive analytics 
+                                and automated reporting for 50+ enterprise clients.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Case Study
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="contact section" id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="section__title">Start Your Digital Transformation</h2>
+            <span class="section__subtitle">Let's build the future together</span>
+            
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-robot contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">AI Consultation</h3>
+                            <span class="contact__subtitle">Free strategy session</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="uil uil-bolt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Quick Start</h3>
+                            <span class="contact__subtitle">2-week prototype delivery</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__information">
+                        <i class="uil uil-globe contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Global Reach</h3>
+                            <span class="contact__subtitle">Remote teams worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input" name="name" required>
+                        </div>
+                        
+                        <div class="contact__content">
+                            <label for="company" class="contact__label">Company</label>
+                            <input type="text" id="company" class="contact__input" name="company">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="project-type" class="contact__label">Project Interest</label>
+                        <select id="project-type" class="contact__input" name="project-type">
+                            <option value="">Select project type</option>
+                            <option value="ai">AI & Automation</option>
+                            <option value="web3">Web3 & Blockchain</option>
+                            <option value="saas">SaaS Platform</option>
+                            <option value="consulting">Digital Transformation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <label for="email" class="contact__label">Email</label>
+                        <input type="email" id="email" class="contact__input" name="email" required>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Project Vision</label>
+                        <textarea name="message" id="message" cols="0" rows="5" class="contact__input" 
+                                  placeholder="Describe your digital transformation goals..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Schedule Strategy Call
+                            <i class="uil uil-calendar-alt button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">DigitalInnovation</h1>
+                    <span class="footer__subtitle">Building the Future Today</span>
+                </div>
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="#solutions" class="footer__link">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#case-studies" class="footer__link">Case Studies</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Collaborate</a>
+                    </li>
+                </ul>
+                
+                <div class="footer__socials">
+                    <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    
+                    <a href="https://github.com/" aria-label="GitHub" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/" aria-label="Twitter" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <p class="footer__copy">&#169; 2025 DigitalInnovation. Leading the digital revolution.</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
