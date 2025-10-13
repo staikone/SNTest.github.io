@@ -1522,18 +1522,22 @@ margin-left: 16px;
 }
 
 
-/* Синхронизиране на ширината на header и main content */
-.header .container,
-.main .container {
-    max-width: 968px; /* или каквато е текущата стойност за .container */
+/* Header специфични корекции */
+.header .container {
+    max-width: 968px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
-/* Алтернативно - задайте еднаква max-width за всички контейнери */
-.container {
-    max-width: 968px !important; /* използвайте !important само ако е необходимо */
-    margin-left: auto !important;
-    margin-right: auto !important;
+/* Уверете се, че всички секции използват същата ширина */
+.home__container.container,
+.portfolio .container,
+.about__container.container,
+.services__container.container,
+.contact__container.container,
+.footer__container.container {
+    max-width: 968px;
+    margin: 0 auto;
 }
 }
