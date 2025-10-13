@@ -1521,23 +1521,4 @@ margin-left: 16px;
   line-height: 1;
 }
 
-
-/* Header специфични корекции */
-.header .container {
-    max-width: 968px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Уверете се, че всички секции използват същата ширина */
-.home__container.container,
-.portfolio .container,
-.about__container.container,
-.services__container.container,
-.contact__container.container,
-.footer__container.container {
-    max-width: 968px;
-    margin: 0 auto;
-}
 }
