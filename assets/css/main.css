@@ -1521,4 +1521,19 @@ margin-left: 16px;
   line-height: 1;
 }
 
+
+/* Синхронизиране на ширината на header и main content */
+.header .container,
+.main .container {
+    max-width: 968px; /* или каквато е текущата стойност за .container */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Алтернативно - задайте еднаква max-width за всички контейнери */
+.container {
+    max-width: 968px !important; /* използвайте !important само ако е необходимо */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 }
