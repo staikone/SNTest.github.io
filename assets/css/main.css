@@ -1322,7 +1322,7 @@ margin-top: calc(var(--mb-3) + 5rem);
     }
 
     .about__buttons {
-        justify-content: initial;
+       /* justify-content: initial; */
     }
 
     .qualification__tabs {
